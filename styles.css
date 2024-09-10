@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #e0f7fa; /* Light cyan background for a fresh look */
 }
 
 .container {
@@ -13,32 +13,106 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    font-size: 3em; /* Adjusted font size to match overall design */
+    margin-bottom: 20px;
+    padding: 10px 20px; /* Moderate padding */
+    background: linear-gradient(135deg, #00796b, #004d40); /* Gradient background */
+    color: transparent; /* Hide text color to show gradient */
+    background-clip: text; /* Apply gradient to text */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for a slight depth effect */
 }
 
+/* Title Hover Effect */
+h1:hover {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Slightly more pronounced shadow on hover */
+    transform: scale(1.05); /* Slightly enlarge the text on hover */
+    transition: background 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for effects */
+}
+/* Section Styles */
 .section {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .section h2 {
-    color: #555;
+    color: #004d40;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-.section p {
-    color: #666;
-}
-
+/* Updated Project Link Styles */
 .project-link {
     display: block;
     color: #007BFF;
     text-decoration: none;
     margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .project-link:hover {
+    color: #0056b3;
     text-decoration: underline;
+    transform: scale(1.05);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Updated Project Description Styles */
+.section p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h2 {
+    color: #004d40;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform-origin: center;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+    transform: scale(1.01) translateX(0);
 }
