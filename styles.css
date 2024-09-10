@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,6 +12,7 @@ body {
     padding: 20px;
 }
 
+/* Title Styles */
 h1 {
     text-align: center;
     font-size: 3em; /* Adjusted font size to match overall design */
@@ -29,6 +31,7 @@ h1:hover {
     transform: scale(1.05); /* Slightly enlarge the text on hover */
     transition: background 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for effects */
 }
+
 /* Section Styles */
 .section {
     background-color: #ffffff;
@@ -50,32 +53,59 @@ h1:hover {
     margin-bottom: 10px;
 }
 
-/* Updated Project Link Styles */
-.project-link {
-    display: block;
-    color: #007BFF;
-    text-decoration: none;
-    margin: 10px 0;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.project-link:hover {
-    color: #0056b3;
-    text-decoration: underline;
-    transform: scale(1.05);
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* Updated Project Description Styles */
+/* Project Description Styles */
 .section p {
     color: #666;
     font-size: 1.1em;
     line-height: 1.6;
     font-style: italic;
     margin-bottom: 15px;
+}
+
+/* Project Item Styles */
+.project-item {
+    margin-bottom: 20px; /* Space between project items */
+}
+
+/* Updated Project Link Styles */
+.project-link {
+    display: block;
+    color: #333; /* Softer, darker grey for project links */
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-link:hover {
+    color: #00307c; /* Even softer grey on hover */
+    text-decoration: underline;
+    transform: scale(1.01);
+}
+
+/* Tags Container */
+.tags {
+    margin-top: 10px;
+}
+
+/* Individual Tag Styles */
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark grey text */
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin-right: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tag Hover Effect */
+.tag:hover {
+    background-color: #e0e0e0; /* Slightly darker grey on hover */
+    color: #000; /* Black text on hover for better contrast */
+    cursor: pointer;
 }
 
 /* Contact Info Styles */
