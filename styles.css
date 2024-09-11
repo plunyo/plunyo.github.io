@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa; /* Light cyan background for a fresh look */
+    background-color: #e0f7fa;
 }
 
 .container {
@@ -15,21 +15,14 @@ body {
 /* Title Styles */
 h1 {
     text-align: center;
-    font-size: 3em; /* Adjusted font size to match overall design */
+    font-size: 3em;
     margin-bottom: 20px;
-    padding: 10px 20px; /* Moderate padding */
-    background: linear-gradient(135deg, #00796b, #004d40); /* Gradient background */
-    color: transparent; /* Hide text color to show gradient */
-    background-clip: text; /* Apply gradient to text */
-    -webkit-background-clip: text; /* For WebKit browsers */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for a slight depth effect */
-}
-
-/* Title Hover Effect */
-h1:hover {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Slightly more pronounced shadow on hover */
-    transform: scale(1.05); /* Slightly enlarge the text on hover */
-    transition: background 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for effects */
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Section Styles */
@@ -53,69 +46,76 @@ h1:hover {
     margin-bottom: 10px;
 }
 
-/* Project Description Styles */
-.section p {
-    color: #666;
-    font-size: 1.1em;
-    line-height: 1.6;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-/* Project Item Styles */
-.project-item {
-    margin-bottom: 20px; /* Space between project items */
-}
-
-/* Updated Project Link Styles */
+/* Enhanced Project Link Styles */
 .project-link {
-    display: block;
-    color: #333; /* Softer, darker grey for project links */
-    text-decoration: none;
-    margin: 10px 0;
+    display: inline-block;
+    color: #1a1a1a; /* Darker color for clearer text */
+    background-color: #d1e0e0; /* Light contrast background */
+    padding: 10px 20px;
+    border-radius: 8px;
     font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    margin-bottom: 10px; /* Add space below each project link */
 }
 
 .project-link:hover {
-    color: #00307c; /* Even softer grey on hover */
-    text-decoration: underline;
-    transform: scale(1.01);
+    background-color: #507b7b; /* Stronger color on hover */
+    color: #ffffff; /* White text on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Tags Container */
+/* Adjust Tags Container for spacing */
 .tags {
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
-/* Individual Tag Styles */
+/* Lighter Tag Styles */
 .tag {
     display: inline-block;
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333; /* Dark grey text */
-    padding: 5px 10px;
+    background-color: #e7e7e7; /* Very light background to stand out against links */
+    color: #999; /* Softer gray for text */
+    padding: 5px 12px;
     border-radius: 12px;
     margin-right: 10px;
+    margin-bottom: 10px; /* Add space below each tag */
     font-size: 0.9em;
     font-weight: bold;
+    text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Tag Hover Effect */
 .tag:hover {
-    background-color: #e0e0e0; /* Slightly darker grey on hover */
-    color: #000; /* Black text on hover for better contrast */
+    background-color: #d7d7d7; /* Slightly darker on hover */
+    color: #666;
     cursor: pointer;
 }
 
 /* Contact Info Styles */
 .contact-info {
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #ffffff, #e0f2f1); /* Lighter gradient background */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: -1;
 }
 
 .contact-info:hover {
@@ -132,6 +132,7 @@ h1:hover {
 .contact-info p {
     color: #555;
     font-size: 1.1em;
+    margin-bottom: 10px;
 }
 
 .contact-info a {
@@ -139,10 +140,9 @@ h1:hover {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
-    transform-origin: center;
 }
 
 .contact-info a:hover {
     color: #0056b3;
-    transform: scale(1.01) translateX(0);
+    transform: scale(1.01);
 }
