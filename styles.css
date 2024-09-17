@@ -3,7 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for readability */
 }
 
 .container {
@@ -27,21 +28,21 @@ h1 {
 
 /* Section Styles */
 .section {
-    background-color: #ffffff;
+    background-color: #1e1e1e; /* Dark section background */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
 }
 
 .section h2 {
-    color: #004d40;
+    color: #80cbc4; /* Light teal for titles */
     font-size: 1.8em;
     margin-bottom: 10px;
 }
@@ -49,22 +50,22 @@ h1 {
 /* Enhanced Project Link Styles */
 .project-link {
     display: inline-block;
-    color: #1a1a1a; /* Darker color for clearer text */
-    background-color: #d1e0e0; /* Light contrast background */
+    color: #e0f7fa; /* Lighter text color */
+    background-color: #37474f; /* Darker contrast background */
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: bold;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     text-decoration: none;
     margin-bottom: 10px; /* Add space below each project link */
 }
 
 .project-link:hover {
-    background-color: #507b7b; /* Stronger color on hover */
+    background-color: #00695c; /* Stronger teal color on hover */
     color: #ffffff; /* White text on hover */
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 /* Adjust Tags Container for spacing */
@@ -76,12 +77,12 @@ h1 {
 /* Lighter Tag Styles */
 .tag {
     display: inline-block;
-    background-color: #e7e7e7; /* Very light background to stand out against links */
-    color: #999; /* Softer gray for text */
+    background-color: #424242; /* Dark background for tags */
+    color: #b0bec5; /* Softer gray text */
     padding: 5px 12px;
     border-radius: 12px;
     margin-right: 10px;
-    margin-bottom: 10px; /* Add space below each tag */
+    margin-bottom: 10px;
     font-size: 0.9em;
     font-weight: bold;
     text-decoration: none;
@@ -89,17 +90,17 @@ h1 {
 }
 
 .tag:hover {
-    background-color: #d7d7d7; /* Slightly darker on hover */
-    color: #666;
+    background-color: #616161; /* Slightly darker on hover */
+    color: #ffffff;
     cursor: pointer;
 }
 
 /* Contact Info Styles */
 .contact-info {
-    background: linear-gradient(135deg, #ffffff, #e0f2f1); /* Lighter gradient background */
+    background: linear-gradient(135deg, #1e1e1e, #2e2e2e); /* Darker gradient background */
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -120,29 +121,29 @@ h1 {
 
 .contact-info:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
 }
 
 .contact-info h2 {
-    color: #004d40;
+    color: #80cbc4; /* Light teal */
     font-size: 1.8em;
     margin-bottom: 10px;
 }
 
 .contact-info p {
-    color: #555;
+    color: #b0bec5; /* Lighter gray */
     font-size: 1.1em;
     margin-bottom: 10px;
 }
 
 .contact-info a {
-    color: #007BFF;
+    color: #4fc3f7; /* Light blue for links */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-info a:hover {
-    color: #0056b3;
+    color: #29b6f6;
     transform: scale(1.01);
 }
