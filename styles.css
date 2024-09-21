@@ -58,9 +58,8 @@ h1 {
     margin-bottom: 10px; /* Add space below each project link */
 }
 
-/* Enhanced Project Link Styles */
 .project-link:hover {
-    background-color: #455a64; /* Neutral dark gray on hover */
+    background-color: #00695c; /* Stronger teal color on hover */
     color: #ffffff; /* White text on hover */
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
