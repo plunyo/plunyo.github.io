@@ -19,7 +19,7 @@ h1 {
     font-size: 3em;
     margin-bottom: 20px;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #00796b, #004d40);
+    background: linear-gradient(135deg, #3a3a3a, #2a2a2a); /* Changed from green to neutral dark tones */
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -27,13 +27,10 @@ h1 {
 }
 
 /* Section Styles */
-.section {
-    background-color: #1e1e1e; /* Dark section background */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.section h2 {
+    color: #b0bec5; /* Changed from light teal to softer gray */
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
 .section:hover {
@@ -61,8 +58,9 @@ h1 {
     margin-bottom: 10px; /* Add space below each project link */
 }
 
+/* Enhanced Project Link Styles */
 .project-link:hover {
-    background-color: #00695c; /* Stronger teal color on hover */
+    background-color: #455a64; /* Neutral dark gray on hover */
     color: #ffffff; /* White text on hover */
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
