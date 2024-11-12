@@ -147,3 +147,12 @@ h1 {
     color: #29b6f6;
     transform: scale(1.01);
 }
+
+.shoutout {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    font-size: 10px; /* Adjust for size */
+    color: rgba(0, 0, 0, 0.3); /* Adjust for faintness */
+    z-index: 1000; /* Ensure it stays above most elements */
+}
