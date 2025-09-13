@@ -1,143 +1,144 @@
-/* General Styles */
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0d0d0d;
+  --card: #1a1a1a;
+  --text: #f2f2f2;
+  --accent: #7b5cff;
+  --accent-hover: #a489ff;
+  --muted: #999;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text for readability */
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 0 1rem;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+/* header */
+.site-header {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
 }
 
-/* Title Styles */
-.logo {
-    display: block;
-    margin: 0 auto;
-    padding: 25px;
+.site-header h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
 }
 
-/* Section Styles */
+.site-header .subtitle {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* sections */
 .section {
-    background-color: #1e1e1e; /* Dark section background */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
+  margin: 3rem 0;
 }
 
 .section h2 {
-    color: #80cbc4; /* Light teal for titles */
-    font-size: 1.8em;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  text-transform: lowercase;
 }
 
-/* Enhanced Project Link Styles */
+/* projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-item {
+  background: var(--card);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
 .project-link {
-    display: inline-block;
-    color: #e0f7fa; /* Lighter text color */
-    background-color: #37474f; /* Darker contrast background */
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-    margin-bottom: 10px; /* Add space below each project link */
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .project-link:hover {
-    background-color: #00695c; /* Stronger teal color on hover */
-    color: #ffffff; /* White text on hover */
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  color: var(--accent-hover);
 }
 
-/* Adjust Tags Container for spacing */
 .tags {
-    margin-top: 10px;
-    margin-bottom: 30px;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-/* Lighter Tag Styles */
-.tag {
-    display: inline-block;
-    background-color: #424242; /* Dark background for tags */
-    color: #b0bec5; /* Softer gray text */
-    padding: 5px 12px;
-    border-radius: 12px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-size: 0.9em;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.tags span {
+  background: #2b2b2b;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  transition: background 0.2s;
 }
 
-.tag:hover {
-    background-color: #616161; /* Slightly darker on hover */
-    color: #ffffff;
-    cursor: pointer;
+.tags span:hover {
+  background: var(--accent);
+  color: white;
 }
 
-/* Contact Info Styles */
-.contact-info {
-    background: linear-gradient(135deg, #1e1e1e, #2e2e2e); /* Darker gradient background */
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+/* footer */
+.site-footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid #222;
+  color: var(--muted);
 }
 
-.contact-info::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
-    border-radius: 50%;
-    opacity: 0.3;
-    z-index: -1;
+.site-footer h2 {
+  margin-bottom: 1rem;
+  color: var(--accent);
 }
 
-.contact-info:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+.site-footer ul {
+  list-style: none;
+  margin-bottom: 1rem;
 }
 
-.contact-info h2 {
-    color: #80cbc4; /* Light teal */
-    font-size: 1.8em;
-    margin-bottom: 10px;
+.site-footer li {
+  margin: 0.3rem 0;
 }
 
-.contact-info p {
-    color: #b0bec5; /* Lighter gray */
-    font-size: 1.1em;
-    margin-bottom: 10px;
+.site-footer a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.contact-info a {
-    color: #4fc3f7; /* Light blue for links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+.site-footer a:hover {
+  color: var(--accent-hover);
 }
 
-.contact-info a:hover {
-    color: #29b6f6;
-    transform: scale(1.01);
+.credit {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: #666;
 }
