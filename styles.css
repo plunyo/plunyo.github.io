@@ -77,9 +77,11 @@ nav {
 }
 
 .nav-links a.active {
+  color: var(--text);
   text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-color: var(--faint);
+  text-underline-offset: 5px;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--dim);
 }
 
 /* ─── FOOTER ─── */
@@ -113,11 +115,10 @@ hr.divider {
 
 .page-tag {
   font-family: var(--mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
+  font-size: 0.72rem;
   color: var(--dim);
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 
 /* ─── FADE IN ─── */
@@ -277,11 +278,11 @@ hr.divider {
 
 .about-block h2 {
   font-family: var(--mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
+  font-size: 0.67rem;
   color: var(--dim);
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.85rem;
   font-weight: 400;
+  opacity: 0.7;
 }
 
 .about-block p {
@@ -353,7 +354,6 @@ hr.divider {
   font-size: 0.72rem;
   color: var(--dim);
   flex-shrink: 0;
-  letter-spacing: 0.04em;
 }
 
 .interest-val {
@@ -458,6 +458,65 @@ hr.divider {
   color: var(--dim);
   line-height: 1.75;
   max-width: 440px;
+}
+
+/* ════════════════════════════
+   PROJECTS
+════════════════════════════ */
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 0.85rem;
+}
+
+.project-status {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+  letter-spacing: 0.04em;
+}
+
+.project-status.done {
+  background: #1a2a1a;
+  color: #6a9e6a;
+  border: 1px solid #2a3e2a;
+}
+
+.project-status.wip {
+  background: #2a2415;
+  color: #9e8a4a;
+  border: 1px solid #3a3220;
+}
+
+.project-link {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--dim);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.project-link:hover {
+  color: var(--accent);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+
+.project-tags span {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--dim);
+  border: 1px solid var(--faint);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
 }
 
 /* ─── MOBILE ─── */
