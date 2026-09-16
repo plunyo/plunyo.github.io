@@ -7,38 +7,36 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="wrap">
+    <header class="site-head">
+      <a class="brand" href="index.html">plunyo</a>
       <nav>
-        <a class="nav-logo" href="index.html">plunyo</a>
-        <ul class="nav-links">
-          <li><a href="games.html">games</a></li>
-          <li><a href="projects.html" class="active">projects</a></li>
-          <li><a href="about.html">about</a></li>
-        </ul>
+        <a href="games.html">games</a>
+        <a href="projects.html" class="active">projects</a>
+        <a href="about.html">about</a>
       </nav>
+    </header>
 
-      <section class="about-hero">
-        <span class="page-tag fade-1">projects</span>
-        <h1 class="fade-2">things i built<br />to learn how things work</h1>
-        <p class="sub fade-3">
+    <main class="page projects-page">
+      <header class="page-head">
+        <span class="eyebrow">projects</span>
+        <h1>things i built<br />to learn how things work</h1>
+        <p>
           these aren't products, they're repos i use for version control while i
           figure stuff out. some are finished, most aren't.
         </p>
-      </section>
+      </header>
 
-      <hr class="divider" />
-
-      <!-- POTATO BONES CLIENT -->
-      <div class="about-block fade-3">
-        <h2>// godot multiplayer client</h2>
-        <div class="project-meta">
-          <span class="project-status wip">on hold</span>
-          <a
-            href="https://github.com/plunyo/Potato-Bones-Client"
-            target="_blank"
-            class="project-link"
-            >github ↗</a
-          >
+      <section class="project">
+        <div class="project-top">
+          <h2>// godot multiplayer client</h2>
+          <div>
+            <span>on hold</span>
+            <a
+              href="https://github.com/plunyo/Potato-Bones-Client"
+              target="_blank"
+              >github ↗</a
+            >
+          </div>
         </div>
         <p>
           a frontend godot client for a multiplayer game i was building with a
@@ -51,25 +49,18 @@
           cross the wire and when. basic replication and a lobby system are
           functional. it's on hold while the server side catches up.
         </p>
-        <div class="project-tags">
-          <span>Godot</span><span>GDScript</span><span>networking</span
-          ><span>collaboration</span>
-        </div>
-      </div>
+        <div class="tags">Godot / GDScript / networking / collaboration</div>
+      </section>
 
-      <hr class="divider" />
-
-      <!-- ARENA SHOOTER -->
-      <div class="about-block">
-        <h2>// arena shooter</h2>
-        <div class="project-meta">
-          <span class="project-status wip">in progress</span>
-          <a
-            href="https://github.com/plunyo/Arena-Shooter"
-            target="_blank"
-            class="project-link"
-            >github ↗</a
-          >
+      <section class="project">
+        <div class="project-top">
+          <h2>// arena shooter</h2>
+          <div>
+            <span>in progress</span>
+            <a href="https://github.com/plunyo/Arena-Shooter" target="_blank"
+              >github ↗</a
+            >
+          </div>
         </div>
         <p>
           a 2d multiplayer shooter built with raw enet and raw packets in godot.
@@ -82,25 +73,18 @@
           started getting a real grip on replication and what it actually means
           to keep game state in sync across clients.
         </p>
-        <div class="project-tags">
-          <span>Godot</span><span>ENet</span><span>raw packets</span
-          ><span>server-client</span>
-        </div>
-      </div>
+        <div class="tags">Godot / ENet / raw packets / server-client</div>
+      </section>
 
-      <hr class="divider" />
-
-      <!-- PLUMI -->
-      <div class="about-block">
-        <h2>// plumi — bash clone</h2>
-        <div class="project-meta">
-          <span class="project-status done">finished</span>
-          <a
-            href="https://github.com/plunyo/Plumi"
-            target="_blank"
-            class="project-link"
-            >github ↗</a
-          >
+      <section class="project">
+        <div class="project-top">
+          <h2>// plumi — bash clone</h2>
+          <div>
+            <span>finished</span>
+            <a href="https://github.com/plunyo/Plumi" target="_blank"
+              >github ↗</a
+            >
+          </div>
         </div>
         <p>
           i was annoyed by some of bash's naming conventions so i rebuilt it.
@@ -112,25 +96,18 @@
           commands cleanly. it's nothing too complex, but it taught me more
           about how a shell works under the hood than i expected going in.
         </p>
-        <div class="project-tags">
-          <span>C</span><span>systems</span><span>process forking</span
-          ><span>CLI</span>
-        </div>
-      </div>
+        <div class="tags">C / systems / process forking / CLI</div>
+      </section>
 
-      <hr class="divider" />
-
-      <!-- ECS -->
-      <div class="about-block">
-        <h2>// ECS-Love2D</h2>
-        <div class="project-meta">
-          <span class="project-status wip">bare minimum</span>
-          <a
-            href="https://github.com/plunyo/ECS-Love2D"
-            target="_blank"
-            class="project-link"
-            >github ↗</a
-          >
+      <section class="project">
+        <div class="project-top">
+          <h2>// ECS-Love2D</h2>
+          <div>
+            <span>bare minimum</span>
+            <a href="https://github.com/plunyo/ECS-Love2D" target="_blank"
+              >github ↗</a
+            >
+          </div>
         </div>
         <p>
           an entity-component-system library i wrote for Love2D because Love2D
@@ -143,25 +120,18 @@
           rather than just use someone else's version. currently a bare minimum
           implementation.
         </p>
-        <div class="project-tags">
-          <span>Lua</span><span>Love2D</span><span>ECS</span
-          ><span>architecture</span>
-        </div>
-      </div>
+        <div class="tags">Lua / Love2D / ECS / architecture</div>
+      </section>
 
-      <hr class="divider" />
-
-      <!-- CONCHAT -->
-      <div class="about-block">
-        <h2>// ConChat</h2>
-        <div class="project-meta">
-          <span class="project-status done">done, not maintained</span>
-          <a
-            href="https://github.com/plunyo/ConChat"
-            target="_blank"
-            class="project-link"
-            >github ↗</a
-          >
+      <section class="project">
+        <div class="project-top">
+          <h2>// ConChat</h2>
+          <div>
+            <span>done, not maintained</span>
+            <a href="https://github.com/plunyo/ConChat" target="_blank"
+              >github ↗</a
+            >
+          </div>
         </div>
         <p>
           a bare-minimum chat service, global room, everyone who connects can
@@ -173,16 +143,13 @@
           the first project where i properly learned godot's UI system. two new
           things at once. it worked out.
         </p>
-        <div class="project-tags">
-          <span>Python</span><span>FastAPI</span><span>Godot</span
-          ><span>prototype</span>
-        </div>
-      </div>
+        <div class="tags">Python / FastAPI / Godot / prototype</div>
+      </section>
+    </main>
 
-      <footer>
-        <p>2026 plunyo</p>
-        <p><em>i made this</em></p>
-      </footer>
-    </div>
+    <footer>
+      <p>2026 plunyo</p>
+      <p><em>i made this</em></p>
+    </footer>
   </body>
 </html>

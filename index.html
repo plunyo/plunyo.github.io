@@ -6,57 +6,41 @@
     <title>plunyo</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <div class="wrap">
-      <nav>
-        <a class="nav-logo" href="index.html">plunyo</a>
-        <ul class="nav-links">
-          <li><a href="games.html">games</a></li>
-          <li><a href="projects.html">projects</a></li>
-          <li><a href="about.html">about</a></li>
-        </ul>
+  <body class="home">
+    <aside class="site-rail">
+      <a class="brand" href="index.html"><span>✦</span> plunyo</a>
+      <nav class="rail-nav" aria-label="main navigation">
+        <a href="games.html">games</a>
+        <a href="projects.html">projects</a>
+        <a href="about.html">about</a>
       </nav>
+      <div class="rail-foot">
+        <span>2026 plunyo</span>
+        <span>i made this</span>
+      </div>
+    </aside>
 
-      <section class="home-hero">
-        <span class="page-tag fade-1">// hi</span>
-        <h1 class="fade-2"><span>plunyo</span>.games</h1>
+    <main class="page home-page">
+      <section class="home-splash">
+        <p class="eyebrow">// hi</p>
+        <h1 class="home-title"><span>plunyo</span><small>.games</small></h1>
+        <span class="home-star" aria-hidden="true">✦</span>
 
-        <div class="home-nav-cards fade-4">
-          <a class="home-card" href="games.html">
-            <div>
-              <div class="home-card-label">// what</div>
-              <div class="home-card-title">games</div>
-              <div class="home-card-desc">
-                experimental prototype browser games
-              </div>
-            </div>
-            <span class="home-card-arrow">↗</span>
+        <div class="home-links">
+          <a href="games.html">
+            <strong>games</strong>
+            <span>experimental prototype browser games</span>
           </a>
-          <a class="home-card" href="projects.html">
-            <div>
-              <div class="home-card-label">// what</div>
-              <div class="home-card-title">projects</div>
-              <div class="home-card-desc">
-                non-games that were made for learning
-              </div>
-            </div>
-            <span class="home-card-arrow">↗</span>
+          <a href="projects.html">
+            <strong>projects</strong>
+            <span>non-games that were made for learning</span>
           </a>
-          <a class="home-card" href="about.html">
-            <div>
-              <div class="home-card-label">// who</div>
-              <div class="home-card-title">about me</div>
-              <div class="home-card-desc">learn more about me</div>
-            </div>
-            <span class="home-card-arrow">↗</span>
+          <a href="about.html">
+            <strong>about me</strong>
+            <span>learn more about me</span>
           </a>
         </div>
       </section>
-
-      <footer>
-        <p>2026 plunyo</p>
-        <p><em>i made this</em></p>
-      </footer>
-    </div>
+    </main>
   </body>
 </html>
