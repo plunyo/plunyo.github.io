@@ -3,74 +3,86 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="browser games by plunyo." />
     <title>games — plunyo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-head">
-      <a class="brand" href="index.html">plunyo</a>
+    <header class="container">
       <nav>
-        <a href="games.html" class="active">games</a>
-        <a href="projects.html">projects</a>
-        <a href="about.html">about</a>
+        <ul>
+          <li>
+            <strong><a href="index.html">plunyo.games</a></strong>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="games.html" aria-current="page">games</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main class="page games-page">
-      <header class="page-head">
-        <span class="eyebrow">// games</span>
-        <h1>things i made.<br /><em>technically games.</em></h1>
-        <p>browser only, no install</p>
+    <main class="container">
+      <header class="hero">
+        <p class="kicker">// games</p>
+        <h1>browser games<br />made in godot.</h1>
+        <p>browser only. no install. click and it opens.</p>
       </header>
 
-      <div class="game-list">
-        <a href="/game/lava-runner/" target="_blank"
+      <section class="link-list" aria-label="games">
+        <a class="link-row" href="/game/lava-runner/" target="_blank"
           ><strong>Lava Runner</strong
-          ><span>endless · gravity flip · one button</span><b>↗</b></a
+          ><small>endless · gravity flip · one button</small><span>↗</span></a
         >
-        <a href="/game/meteor-avoidance" target="_blank"
+        <a class="link-row" href="/game/meteor-avoidance" target="_blank"
           ><strong>Meteor Avoidance</strong
-          ><span>space · endless · pixel art · arcade</span><b>↗</b></a
+          ><small>space · mobile friendly · endless · pixel art · arcade</small
+          ><span>↗</span></a
         >
-        <a href="/game/ecosystem-simulator/" target="_blank"
+        <a class="link-row" href="/game/ecosystem-simulator/" target="_blank"
           ><strong>Ecosystem Simulator</strong
-          ><span>simulation · world generation · animals</span><b>↗</b></a
+          ><small>simulation · world generation · animals</small
+          ><span>↗</span></a
         >
-        <a href="/game/blackjack/" target="_blank"
-          ><strong>Blackjack</strong><span>cards · gambling · luck</span
-          ><b>↗</b></a
+        <a class="link-row" href="/game/blackjack/" target="_blank"
+          ><strong>Blackjack</strong
+          ><small>cards · mobile friendly · luck · browser</small
+          ><span>↗</span></a
         >
-        <a href="/game/line-of-danger" target="_blank"
+        <a class="link-row" href="/game/line-of-danger" target="_blank"
           ><strong>Line of Danger</strong
-          ><span>local multiplayer · mobile friendly · arcade</span><b>↗</b></a
+          ><small>local multiplayer · mobile friendly · arcade</small
+          ><span>↗</span></a
         >
-        <a href="/game/find-the-fox" target="_blank"
-          ><strong>Find the Fox</strong><span>word search · fox</span
-          ><b>↗</b></a
+        <a class="link-row" href="/game/find-the-fox" target="_blank"
+          ><strong>Find the Fox</strong
+          ><small>word search · mobile friendly · fox</small><span>↗</span></a
         >
-        <a href="/game/bit-jump" target="_blank"
+        <a class="link-row" href="/game/bit-jump" target="_blank"
           ><strong>Bit Jump</strong
-          ><span>platformer · mobile friendly · 1-bit · arcade</span><b>↗</b></a
+          ><small>platformer · mobile friendly · 1-bit · arcade</small
+          ><span>↗</span></a
         >
-        <a href="/game/galactic-vortex" target="_blank"
+        <a class="link-row" href="/game/galactic-vortex" target="_blank"
           ><strong>Galactic Vortex</strong
-          ><span>shooter · browser · arcade</span><b>↗</b></a
+          ><small>shooter · browser · arcade</small><span>↗</span></a
         >
-        <a href="/game/word-seeker" target="_blank"
+        <a class="link-row" href="/game/word-seeker" target="_blank"
           ><strong>Word Seeker</strong
-          ><span>puzzle · browser · educational</span><b>↗</b></a
+          ><small>puzzle · browser · educational</small><span>↗</span></a
         >
-      </div>
-
-      <p class="note">
-        all browser, no downloads. some work on mobile too.<br />these are all
-        bare minimum prototypes so dont expect much
-      </p>
+      </section>
     </main>
 
-    <footer>
-      <p>2026 plunyo</p>
-      <p><em>i made this</em></p>
+    <footer class="container">
+      <span>2026 plunyo</span>
+      <span>whaddup boi we made it</span>
     </footer>
   </body>
 </html>

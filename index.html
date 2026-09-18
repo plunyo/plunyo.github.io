@@ -3,44 +3,68 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>plunyo</title>
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="plunyo — games, code, and things i build to figure out how stuff works."
+    />
+    <title>plunyo.games</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="home">
-    <aside class="site-rail">
-      <a class="brand" href="index.html"><span>✦</span> plunyo</a>
-      <nav class="rail-nav" aria-label="main navigation">
-        <a href="games.html">games</a>
-        <a href="projects.html">projects</a>
-        <a href="about.html">about</a>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li>
+            <strong><a href="index.html">plunyo.games</a></strong>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="games.html">games</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
       </nav>
-      <div class="rail-foot">
-        <span>2026 plunyo</span>
-        <span>i made this</span>
-      </div>
-    </aside>
+    </header>
 
-    <main class="page home-page">
-      <section class="home-splash">
-        <p class="eyebrow">// hi</p>
-        <h1 class="home-title"><span>plunyo</span><small>.games</small></h1>
-        <span class="home-star" aria-hidden="true">✦</span>
+    <main class="container">
+      <section class="hero">
+        <p class="kicker">// yellow</p>
+        <h1>plunyo.games</h1>
+        <p>games, code, and about me</p>
 
-        <div class="home-links">
-          <a href="games.html">
+        <div class="link-list home-links">
+          <a class="link-row" href="games.html">
             <strong>games</strong>
-            <span>experimental prototype browser games</span>
+            <small>experimental browser games made in godot</small>
+            <span>→</span>
           </a>
-          <a href="projects.html">
+          <a class="link-row" href="projects.html">
             <strong>projects</strong>
-            <span>non-games that were made for learning</span>
+            <small
+              >networking, systems, tools, and assorted unfinished
+              nonsense</small
+            >
+            <span>→</span>
           </a>
-          <a href="about.html">
+          <a class="link-row" href="about.html">
             <strong>about me</strong>
-            <span>learn more about me</span>
+            <small
+              >what i use, what i'm learning, and why i keep doing this</small
+            >
+            <span>→</span>
           </a>
         </div>
       </section>
     </main>
+
+    <footer class="container">
+      <span>2026 plunyo</span>
+      <span>i love 67 chuds</span>
+    </footer>
   </body>
 </html>

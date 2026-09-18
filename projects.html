@@ -3,153 +3,165 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="projects and experiments by plunyo." />
     <title>projects — plunyo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-head">
-      <a class="brand" href="index.html">plunyo</a>
+    <header class="container">
       <nav>
-        <a href="games.html">games</a>
-        <a href="projects.html" class="active">projects</a>
-        <a href="about.html">about</a>
+        <ul>
+          <li>
+            <strong><a href="index.html">plunyo.games</a></strong>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="games.html">games</a></li>
+          <li><a href="projects.html" aria-current="page">projects</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main class="page projects-page">
-      <header class="page-head">
-        <span class="eyebrow">projects</span>
-        <h1>things i built<br />to learn how things work</h1>
-        <p>
-          these aren't products, they're repos i use for version control while i
-          figure stuff out. some are finished, most aren't.
-        </p>
+    <main class="container">
+      <header class="hero">
+        <p class="kicker">// projects</p>
+        <h1>real code projects</h1>
+        <p>NOT FINISHED PRODUCTS. PURELY FOR LEARNING.</p>
       </header>
 
-      <section class="project">
-        <div class="project-top">
-          <h2>// godot multiplayer client</h2>
-          <div>
-            <span>on hold</span>
+      <section class="project-list">
+        <section class="project">
+          <header>
+            <h2>godot multiplayer client</h2>
+            <span class="status">dead</span>
+          </header>
+          <p>
             <a
               href="https://github.com/plunyo/Potato-Bones-Client"
               target="_blank"
               >github ↗</a
             >
-          </div>
-        </div>
-        <p>
-          a frontend godot client for a multiplayer game i was building with a
-          friend, my first time collaborating with another developer. the server
-          side was his, i made the client.
-        </p>
-        <p>
-          what made it interesting was learning how networking actually works at
-          the tcp level, structuring packets, figuring out what data needs to
-          cross the wire and when. basic replication and a lobby system are
-          functional. it's on hold while the server side catches up.
-        </p>
-        <div class="tags">Godot / GDScript / networking / collaboration</div>
-      </section>
+          </p>
+          <p>
+            a frontend godot client for a multiplayer game i was building with a
+            friend, my first time collaborating with another developer. the
+            server side was his, i made the client.
+          </p>
+          <p>
+            what made it interesting was learning how networking actually works
+            at the tcp level, structuring packets, figuring out what data needs
+            to cross the wire and when. basic replication and a lobby system are
+            functional. it's on hold while the server side catches up.
+          </p>
+          <p class="meta">Godot / GDScript / networking / collaboration</p>
+        </section>
 
-      <section class="project">
-        <div class="project-top">
-          <h2>// arena shooter</h2>
-          <div>
-            <span>in progress</span>
+        <section class="project">
+          <header>
+            <h2>arena shooter</h2>
+            <span class="status">in progress</span>
+          </header>
+          <p>
             <a href="https://github.com/plunyo/Arena-Shooter" target="_blank"
               >github ↗</a
             >
-          </div>
-        </div>
-        <p>
-          a 2d multiplayer shooter built with raw enet and raw packets in godot.
-          server-client architecture, one global room you drop into and fight.
-          no abstraction layer over the networking, everything is manual.
-        </p>
-        <p>
-          joining, spawning, and basic replication work. no actual gameplay yet,
-          but the infrastructure is the interesting part anyway. this is where i
-          started getting a real grip on replication and what it actually means
-          to keep game state in sync across clients.
-        </p>
-        <div class="tags">Godot / ENet / raw packets / server-client</div>
-      </section>
+          </p>
+          <p>
+            a 2d multiplayer shooter built with raw enet and raw packets in
+            godot. server-client architecture, one global room you drop into and
+            fight. no abstraction layer over the networking, everything is
+            manual.
+          </p>
+          <p>
+            joining, spawning, and basic replication work. no actual gameplay
+            yet, but the infrastructure is the interesting part anyway. this is
+            where i started getting a real grip on replication and what it
+            actually means to keep game state in sync across clients.
+          </p>
+          <p class="meta">Godot / ENet / raw packets / server-client</p>
+        </section>
 
-      <section class="project">
-        <div class="project-top">
-          <h2>// plumi — bash clone</h2>
-          <div>
-            <span>finished</span>
+        <section class="project">
+          <header>
+            <h2>plumi — bash clone</h2>
+            <span class="status">finished</span>
+          </header>
+          <p>
             <a href="https://github.com/plunyo/Plumi" target="_blank"
               >github ↗</a
             >
-          </div>
-        </div>
-        <p>
-          i was annoyed by some of bash's naming conventions so i rebuilt it.
-          written in c. not a full shell replacement, but it does what i wanted.
-        </p>
-        <p>
-          the interesting parts were learning how forking processes actually
-          works at the OS level, and building a modular system for adding
-          commands cleanly. it's nothing too complex, but it taught me more
-          about how a shell works under the hood than i expected going in.
-        </p>
-        <div class="tags">C / systems / process forking / CLI</div>
-      </section>
+          </p>
+          <p>
+            i was annoyed by some of bash's naming conventions so i rebuilt it.
+            written in c. not a full shell replacement, but it does what i
+            wanted.
+          </p>
+          <p>
+            the interesting parts were learning how forking processes actually
+            works at the os level, and building a modular system for adding
+            commands cleanly. it's nothing too complex, but it taught me more
+            about how a shell works under the hood than i expected going in.
+          </p>
+          <p class="meta">C / systems / process forking / CLI</p>
+        </section>
 
-      <section class="project">
-        <div class="project-top">
-          <h2>// ECS-Love2D</h2>
-          <div>
-            <span>bare minimum</span>
+        <section class="project">
+          <header>
+            <h2>ECS-Love2D</h2>
+            <span class="status">bare minimum</span>
+          </header>
+          <p>
             <a href="https://github.com/plunyo/ECS-Love2D" target="_blank"
               >github ↗</a
             >
-          </div>
-        </div>
-        <p>
-          an entity-component-system library i wrote for Love2D because Love2D
-          doesn't have one built in and i wanted to make games with ECS.
-        </p>
-        <p>
-          what got me was how elegant ECS is as a pattern, the way separating
-          data from behaviour makes everything more composable and modular.
-          implementing it from scratch forced me to actually understand it
-          rather than just use someone else's version. currently a bare minimum
-          implementation.
-        </p>
-        <div class="tags">Lua / Love2D / ECS / architecture</div>
-      </section>
+          </p>
+          <p>
+            an entity-component-system library i wrote for Love2D because Love2D
+            doesn't have one built in and i wanted to make games with ECS.
+          </p>
+          <p>
+            what got me was how elegant ECS is as a pattern, the way separating
+            data from behaviour makes everything more composable and modular.
+            implementing it from scratch forced me to actually understand it
+            rather than just use someone else's version.
+          </p>
+          <p class="meta">Lua / Love2D / ECS / architecture</p>
+        </section>
 
-      <section class="project">
-        <div class="project-top">
-          <h2>// ConChat</h2>
-          <div>
-            <span>done, not maintained</span>
+        <section class="project">
+          <header>
+            <h2>ConChat</h2>
+            <span class="status">done, not maintained</span>
+          </header>
+          <p>
             <a href="https://github.com/plunyo/ConChat" target="_blank"
               >github ↗</a
             >
-          </div>
-        </div>
-        <p>
-          a bare-minimum chat service, global room, everyone who connects can
-          talk. not secure, not polished, never meant to be. the goal was small
-          and i hit it.
-        </p>
-        <p>
-          backend is FastAPI in python, frontend is godot, which also made this
-          the first project where i properly learned godot's UI system. two new
-          things at once. it worked out.
-        </p>
-        <div class="tags">Python / FastAPI / Godot / prototype</div>
+          </p>
+          <p>
+            a bare-minimum chat service: one global room, everyone who connects
+            can talk. not secure, not polished, never meant to be. the goal was
+            small and i hit it.
+          </p>
+          <p>
+            backend is FastAPI in python, frontend is godot, which also made
+            this the first project where i properly learned godot's ui system.
+            two new things at once. somehow survived.
+          </p>
+          <p class="meta">Python / FastAPI / Godot / prototype</p>
+        </section>
       </section>
     </main>
 
-    <footer>
-      <p>2026 plunyo</p>
-      <p><em>i made this</em></p>
+    <footer class="container">
+      <span>2026 plunyo</span>
+      <span>ayo sus</span>
     </footer>
   </body>
 </html>

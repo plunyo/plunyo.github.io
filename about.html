@@ -3,155 +3,166 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="about plunyo — games, programming, networking, linux, and other rabbit holes."
+    />
     <title>about — plunyo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <aside class="site-rail">
-      <a class="brand" href="index.html"><span>✦</span> plunyo</a>
-      <nav class="rail-nav" aria-label="main navigation">
-        <a href="games.html">games</a>
-        <a href="projects.html">projects</a>
-        <a class="active" href="about.html">about</a>
+    <header class="container">
+      <nav>
+        <ul>
+          <li>
+            <strong><a href="index.html">plunyo.games</a></strong>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="games.html">games</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="about.html" aria-current="page">about</a></li>
+        </ul>
       </nav>
-      <div class="rail-foot">
-        <span>2026 plunyo</span>
-        <span>i made this</span>
-      </div>
-    </aside>
+    </header>
 
-    <main class="page about-page">
-      <div class="about-layout">
-        <header class="about-intro">
-          <p class="eyebrow">about me</p>
-          <h1>i build games<br />and systems in my spare time</h1>
-          <p class="sub">some of them even get finished</p>
-        </header>
+    <main class="container">
+      <header class="hero">
+        <p class="kicker">// about me</p>
+        <h1>i'm a developerrrr...!</h1>
+        <p>i taught myself how to code in my free time 🥹</p>
+      </header>
 
-        <div class="about-content">
-          <section>
-            <h2>who</h2>
-            <p>
-              i'm plunyo, a self-taught developer who builds games, tools, and
-              low-level systems mostly for fun.
-            </p>
-            <p>
-              everything i know about coding i genuinely rawdogged, tutorials,
-              docs, countless "why isn't this working" searches, and staring at
-              the screen until something clicked.
-            </p>
-            <p>
-              and that feeling when it does click, when something that was
-              completely broken suddenly works and you actually understand why,
-              that's what keeps me coming back.
-            </p>
-            <p>
-              i mainly use godot for games and c for everything else, and lately
-              i've been getting into networking and how the lower-level stuff
-              actually works.
-            </p>
-          </section>
-
-          <section>
-            <h2>skills</h2>
-            <dl class="plain-list skills-list">
-              <div>
-                <dt>Godot / GDScript</dt>
-                <dd>main language for games</dd>
-              </div>
-              <div>
-                <dt>C</dt>
-                <dd>for anything that isn't a game</dd>
-              </div>
-              <div>
-                <dt>Lua</dt>
-                <dd>Love2D and everything else</dd>
-              </div>
-              <div>
-                <dt>Linux</dt>
-                <dd>not an expert, but i know enough</dd>
-              </div>
-              <div>
-                <dt>Game Design</dt>
-                <dd>systems, feel, the fun part</dd>
-              </div>
-              <div>
-                <dt>Git / Github</dt>
-                <dd>used on every project</dd>
-              </div>
-              <div>
-                <dt>Tetris</dt>
-                <dd>i love tetris</dd>
-              </div>
-            </dl>
-          </section>
-
-          <section>
-            <h2>gaming</h2>
-            <p>
-              most of my inspiration comes from games i play with friends.
-              that's genuinely why i started making games, i wanted to build the
-              kind of thing people would actually sit down and play together.
-              friends are what make gaming worth it, and honestly without them i
-              probably wouldn't code half as much.
-            </p>
-          </section>
-
-          <section>
-            <h2>currently</h2>
-            <dl class="plain-list info-list">
-              <div>
-                <dt>learning</dt>
-                <dd>networking (enet, tcp, udp), backend, graphics</dd>
-              </div>
-              <div>
-                <dt>listening to</dt>
-                <dd>
-                  <a
-                    href="https://open.spotify.com/user/3133mn6rro5ecrjl4yyrjmunance?si=31b4443689924ba2"
-                    target="_blank"
-                    >my spotify</a
-                  >
-                </dd>
-              </div>
-              <div>
-                <dt>playing</dt>
-                <dd>tetr.io, minecraft, valorant</dd>
-              </div>
-              <div>
-                <dt>status</dt>
-                <dd>student</dd>
-              </div>
-            </dl>
-          </section>
-
-          <section>
-            <h2>say hi</h2>
-            <dl class="plain-list info-list">
-              <div>
-                <dt>email</dt>
-                <dd>
-                  <a href="mailto:plunyo.games@gmail.com"
-                    >contact@plunyo.games</a
-                  >
-                </dd>
-              </div>
-              <div>
-                <dt>github</dt>
-                <dd>
-                  <a href="https://github.com/plunyo" target="_blank"
-                    >github.com/plunyo</a
-                  >
-                </dd>
-              </div>
-              <div>
-                <dt>discord</dt>
-                <dd>plunyo</dd>
-              </div>
-            </dl>
-          </section>
+      <section class="split">
+        <h2>who</h2>
+        <div>
+          <p>
+            i'm plunyo, a self-taught developer who builds games, tools, and
+            low-level systems mostly for fun.
+          </p>
+          <p>
+            everything i know about coding i basically learned through docs,
+            tutorials, countless “why isn't this working” searches, and staring
+            at a screen until something finally clicked.
+          </p>
+          <p>
+            that moment when something broken suddenly works and you actually
+            understand why is the entire reason i keep doing this.
+          </p>
+          <p>
+            i mainly use godot for games and c for lower-level stuff, and lately
+            i've been getting deeper into networking, backend work, and
+            graphics.
+          </p>
         </div>
-      </div>
+      </section>
+
+      <section class="split">
+        <h2>skills</h2>
+        <dl class="clean-dl">
+          <div>
+            <dt>Godot / GDScript</dt>
+            <dd>main stack for games</dd>
+          </div>
+          <div>
+            <dt>C</dt>
+            <dd>systems and lower-level experiments</dd>
+          </div>
+          <div>
+            <dt>Lua / Love2D</dt>
+            <dd>small games and experiments</dd>
+          </div>
+          <div>
+            <dt>Linux</dt>
+            <dd>enough to break it and usually fix it again</dd>
+          </div>
+          <div>
+            <dt>Game design</dt>
+            <dd>systems, feel, the fun part</dd>
+          </div>
+          <div>
+            <dt>Git / GitHub</dt>
+            <dd>used on basically everything</dd>
+          </div>
+          <div>
+            <dt>Tetris</dt>
+            <dd>important technical competency</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="split">
+        <h2>gaming</h2>
+        <div>
+          <p>
+            most of my inspiration comes from games i play with friends. that's
+            genuinely why i started making games: i wanted to build the kind of
+            thing people would actually sit down and play together.
+          </p>
+        </div>
+      </section>
+
+      <section class="split">
+        <h2>currently</h2>
+        <dl class="clean-dl">
+          <div>
+            <dt>learning</dt>
+            <dd>networking (enet, tcp, udp), backend, graphics</dd>
+          </div>
+          <div>
+            <dt>listening to</dt>
+            <dd>
+              <a
+                href="https://open.spotify.com/user/3133mn6rro5ecrjl4yyrjmunance?si=31b4443689924ba2"
+                target="_blank"
+                >my spotify ↗</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>playing</dt>
+            <dd>tetr.io, minecraft, valorant</dd>
+          </div>
+          <div>
+            <dt>status</dt>
+            <dd>student</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="split">
+        <h2>say hi</h2>
+        <dl class="clean-dl">
+          <div>
+            <dt>email</dt>
+            <dd>
+              <a href="mailto:plunyo.games@gmail.com">plunyo.games@gmail.com</a>
+            </dd>
+          </div>
+          <div>
+            <dt>github</dt>
+            <dd>
+              <a href="https://github.com/plunyo" target="_blank"
+                >github.com/plunyo ↗</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>discord</dt>
+            <dd>plunyo</dd>
+          </div>
+        </dl>
+      </section>
     </main>
+
+    <footer class="container">
+      <span>2026 plunyo</span>
+      <span>sus</span>
+    </footer>
   </body>
 </html>
